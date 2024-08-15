@@ -91,7 +91,7 @@ export class DfUserDetailsComponent extends DfUserDetailsBaseComponent<UserProfi
   get userAppRoles() {
     const userAppRoles = this.userForm.value.appRoles.map((item: any) => {
       const appRole = {
-        userId: this.currentProfile.id,
+        // userId: this.currentProfile.id,
         appId: this.apps.find(app => app.name === item.app)?.id,
         roleId: this.roles.find(role => role.name === item.role)?.id,
       };
